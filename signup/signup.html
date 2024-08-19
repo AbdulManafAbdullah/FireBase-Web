@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="signup_form">
+    <div class="flex items-center justify-center min-h-screen bg-pink-300">
+        <!-- Card Container -->
+        <div class="relative flex flex-col bg-white space-x-5 rounded-2xl shadow-md md:max-w-[1000px] md:min-w[800px] md:flex-row md:space-y-0">
+    
+          <div class="flex flex-col pb-5">
+            <div class="flex flex-row pb-5 ">
+              <img class="ml-5 mt-10 w-20 h-20 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="data:image/jpeg;base64,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" alt="Bordered avatar">
+            </div>
+            <input  style="font-size: 0.1em;" class="ml-3 text-pink-600 font-thin"  type="file" required id="profile_img">
+            <h1 class="font-extrabold text-3xl m-8 mx-16 text-zinc-700">Sign up</h1>
+            
+            <input class="mx-16 my-5 px-5 py-3 border border-slate-300 rounded-2xl" type="email" placeholder="Email"  required>
+            <input class="mx-16 my-5 px-5 py-3 border border-slate-300 rounded-2xl" type="password" placeholder="Password"  required>
+            
+            <div class="flex flex-col border-b pb-10 md:flex-row m-2 space-y-5 mx-20">
+              
+              <button 
+              id="submit_btn"
+              type="submit"
+              class="md:flex-1 rounded-lg py-5 transition duration-200 text-slate-50
+              bg-pink-400 shadow-sm font-semibold hover:translate-y-[-5px] hover:shadow-md hover:shadow-pink-400"
+                type="button">Sign up</button>
+            </div>
+            <p class="mb-2 text-center text-slate-500 font-thin">
+              Or login with
+            </p>
+            <div class="flex flex-col md:flex-row mx-20 my-3 space-y-5 md:space-y-0 md:space-x-5">
+              <button class="flex flex-1 items-center justify-center border border-rose-500 py-3 px-5 rounded-md
+               hover:bg-rose-500 hover:text-white duration-300 text-slate-600 font-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mr-3 bi bi-google"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                </svg>
+                Google
+              </button>
+              <button class="flex flex-1 items-center justify-center border border-blue-400 py-3 px-5 rounded-md
+              hover:bg-blue-500 hover:text-white duration-300 text-slate-600 font-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                  class="mr-3 bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+                Facebook
+              </button>
+            </div>
+            <!-- login account------------------- -->
+            <button class="flex flex-2 items-center justify-center border border--400 py-3 px-5 rounded-md
+            hover:bg-gray-500 hover:text-white duration-300 text-slate-600 font-xxl ml-5">
+      <i class="fa fa-universal-access" aria-hidden="true"></i> &nbsp;&nbsp;
+    <a href="../login/login.html">alredy have an account</a>
+  </button>
+          </div>
+          <img
+            src="https://plus.unsplash.com/premium_photo-1684761875782-a070fc81f901?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHBhc3N3b3JkJTIwaW4lMjBwaW5rfGVufDB8fDB8fHww"
+            class="object-cover max-w-[400px] hidden rounded-md md:block" />
+        </div>
+      </div>
+    </form>
+    <script type="module" src="./app.js"></script
+    
+</body>
+</html>
