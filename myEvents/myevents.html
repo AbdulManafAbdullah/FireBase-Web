@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+     <link rel="stylesheet" href="./myevents.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+<body>
+
+    <!-- <h1>Events</h1>
+    <button id="logout_btn">Logout</button> -->
+
+ 
+<!-- ==============================NavBar -->
+ 
+<aside class="sidebar">
+    <div class="logo">
+     <a href="/profile/profile.html">
+      <img 
+      id="user_img"
+      src="https://dynamic.brandcrowd.com/asset/logo/26a7873e-cfc3-4ca4-8a5e-5038c9431254/logo-search-grid-2x?logoTemplateVersion=1&v=638580275166170000&colorpalette=blue" alt="logo" style="display: none;">
+     </a> 
+      
+      <h2>My Events</h2>
+    </div>
+    <ul class="links">
+      <h4>Main Menu</h4>
+      <li>
+        <span class="material-symbols-outlined">dashboard</span>
+        <a href="../utils/index.html">Dashboard</a>
+      </li>
+      <li id="profile">
+        <span class="material-symbols-outlined">show_chart</span>
+        <a href="../profile/profile.html">Profile</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">ambient_screen</span>
+        <a href="../creatEvent/event.html">Create Event</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">flag</span>
+        <a href="#">Reports</a>
+      </li>
+      <hr>
+      <h4>Advanced</h4>
+      <li>
+        <span class="material-symbols-outlined">pacemaker</span>
+        <a href="/myEvents/myevents.html">My Events</a>
+      </li>
+      <li>
+        <span class="material-symbols-outlined">monitoring</span>
+        <a href="#">Analytic</a>
+      </li>
+      <hr>
+      <h4>Account</h4>
+      <!-- <li id="login_link">
+        <span class="material-symbols-outlined" >person</span>
+        <a href="/login/login.html">Log In</a>
+      </li> -->
+      <!-- <li  id="signup_link">
+        <span class="material-symbols-outlined">group</span>
+        <a href="/signup/signup.html">Sign Up</a>
+      </li> -->
+      <li>
+        <span class="material-symbols-outlined">settings</span>
+        <a href="#">Settings</a>
+      </li>
+      <li class="logout-link" id="logout_btn">
+        <span class="material-symbols-outlined">logout</span>
+        <a href="../utils/index.html">Logout</a>
+      </li>
+    </ul>
+  </aside>
+ <!-- events card === -->
+ <div id="events_cards" class="container  mx-auto p-5 flex flex-row flex-wrap justify-center items-center gap-6">
+  <!-- Event cards will be injected here -->
+</div>  
+ <!-- events card  End=== -->
+ 
+
+  
+      <script type="module" src="./app.js"></script>
+</body>
+</html>
+
